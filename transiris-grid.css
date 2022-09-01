@@ -38,11 +38,27 @@ div[class*="-col"] {
 .quarter-col {
   width: 25%;
 }
+.three-fourth-col {
+  width: 75%;
+}
+.two-fifth-col {
+  width: 60%;
+}
+.three-fifth-col {
+  width: 40%;
+}
+
 @media screen and (max-width: 1280px) {}
 @media screen and (max-width: 1024px) {
   .third-col,
   .quarter-col {
     width: 100%;
+  }
+  .quarter-col,
+  .three-fourth-col,
+  .two-fifth-col,
+  .three-fifth-col {
+    width: 50%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -50,9 +66,7 @@ div[class*="-col"] {
   .third-col {
     width: 100%;
   }
-  .quarter-col {
-    width: 50%;
-  }
+  
 }
 @media screen and (max-width: 480px) {
   .content-width {
@@ -60,7 +74,10 @@ div[class*="-col"] {
   }
   .half-col,
   .third-col,
-  .quarter-col {
+  .quarter-col,
+  .three-fourth-col,
+  .two-fifth-col,
+  .three-fifth-col {
     width: 100%;
   }
 }
