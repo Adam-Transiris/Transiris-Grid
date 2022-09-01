@@ -4,10 +4,58 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/*DEBUG CSS - ONLY FOR TESTING*/
+
+div[class*="-col"] {
+  background-color: grey;
+  display: grid;
+  place-content: center;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+/*DEBUG CSS - ONLY FOR TESTING*/
+
 .content-width {
-  max-width: 1440px;
+  max-width: 1280px;
   width: 80%;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-between;
+}
+.full-col {
+  width: 100%;
+}
+.half-col {
+  width: 50%;
+}
+.third-col {
+  width: 33%;
+}
+.quarter-col {
+  width: 25%;
+}
+@media screen and (max-width: 1280px) {}
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 768px) {
+  .half-col,
+  .third-col {
+    width: 100%;
+  }
+  .quarter-col {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .content-width {
+    flex-direction: column;
+  }
+  .half-col,
+  .third-col,
+  .quarter-col {
+    width: 100%;
+  }
 }
