@@ -39,7 +39,12 @@ div[class*="-col"] {
   width: 25%;
 }
 @media screen and (max-width: 1280px) {}
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+  .third-col,
+  .quarter-col {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 768px) {
   .half-col,
   .third-col {
